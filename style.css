@@ -39,6 +39,7 @@ img {
 }
 .col-6{
     width: 50%;
+    overflow: hidden;
 }
 .col-7 {
     width: 57.44%;

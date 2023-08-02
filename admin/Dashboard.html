@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo col-3">
+                    <a href="https://programmer-sohel.netlify.app">Exit</a>
+                </div>
+                <div class="nav_menu col-9">
+
+                    <ul class="horizontal_menu">
+                        <li class="menu_item">
+                            <a href="/" data_name="dashboard" class="menu_link active_link">Dashboard</a>
+                        </li>
+                        <li class="menu_item">
+                            <a data_name="posts" class="menu_link">Posts</a>
+                        </li>
+                        <li class="menu_item">
+                            <a data_name="projects" class="menu_link">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <div id="content">
+        <div id="dashboard" class="page">
+            <div class="container">
+                <div class="row">
+                    <h2>Welcome, Md Sohel</h4>
+                </div>
+            </div>
+        </div>
+        <div id="posts" class="page">
+            <div class="container">
+                <div class="row">
+                    <h3 class="title">All Posts</h3>
+                    <a class="new_btn menu_link" data_name="newPosts">
+                        <i class="fa fa-plus"></i>
+                        New Post
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="article">
+                        <div class="img">
+                            <img src="../images/project1.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title</h3>
+                            <div class="actions">
+                                <ul>
+                                    <li>view</li>
+                                    <li>edit</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="page">
+            <div class="container">
+                <div class="row">
+                    <h3 class="title">All Projects</h3>
+                    <a class="new_btn menu_link" data_name="newProject">
+                        <i class="fa fa-plus"></i>
+                        New Project
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="article">
+                        <div class="img">
+                            <img src="../images/project1.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title</h3>
+                            <div class="actions">
+                                <ul>
+                                    <li>view</li>
+                                    <li>edit</li>
+                                    <li>delete</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="newPosts" class="page">
+            <div class="container">
+                <div class="row">
+                    <h3 class="title">New Post</h3>
+                </div>
+                <div class="row">
+                    <form id="posts_form">
+                        <div class="input_container">
+                            <input type="text" placeholder="Post Title" />
+                        </div>
+                        <div class="input_container">
+                            <input type="file" />
+                        </div>
+                        <div class="input_container">
+                            <textarea name="description" id="" placeholder="Type Your Thought..."></textarea>
+                        </div>
+                        <a class="primary_btn">post</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="newProject" class="page">
+            <div class="container">
+                <div class="row">
+                    <h3 class="title">New Project</h3>
+                </div>
+                <div class="row">
+                    <form id="posts_form">
+                        <div class="row" style="align-items: start;column-gap: 80px;">
+                            <div class="col-7">
+                                <div class="input_container">
+                                    <input type="text" placeholder="Project Title" />
+                                </div>
+                                <div class="input_container">
+                                    <input type="file" />
+                                </div>
+                                <div class="input_container">
+                                    <input type="text" placeholder="www.projecturl.com" />
+                                </div>
+
+                                <div class="input_container">
+                                    <textarea name="description" id="" placeholder="Type Your Thought..."></textarea>
+                                </div>
+
+                            </div>
+                            <div class="col-5">
+                                <div class="row" style="align-items: start;">
+                                    <div class="col-6 options">
+                                        <h3>Category</h3>
+                                        <div class="input_container">
+                                            <input type="radio" id="ecommerce" name="interest" value="ecommerce">
+                                            <label for="ecommerce">Ecommerce</label>
+                                        </div>
+                                        <div class="input_container">
+                                            
+                                            <input type="radio" id="socialmedia" name="interest" value="socialmedia">
+                                            <label for="socialmedia">Social Media</label>
+                                        </div>
+        
+                                        <div class="input_container">
+                                            
+                                            <input type="radio" id="blog" name="interest" value="blog">
+                                            <label for="blog">Blog</label>
+                                        </div>
+        
+                                        <div class="input_container">
+                                            
+                                            <input type="radio" id="education" name="interest" value="education">
+                                            <label for="education">Education</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 options">
+                                        <h3>Technology</h3>
+                                        <div class="input_container">
+                                            
+                                            <input type="checkbox" id="row_css" name="technology" value="row_css">
+                                            <label for="row_css"> Row CSS</label>
+                                        </div>
+                                        <div class="input_container">
+                                            
+                                            <input type="checkbox" id="bootstrap" name="technology" value="bootstrap">
+                                            <label for="bootstrap">Bootstrap</label>
+                                        </div>
+        
+                                        <div class="input_container">
+                                            
+                                            <input type="checkbox" id="javascript" name="technology" value="javascript">
+                                            <label for="javascript">Javascript</label>
+                                        </div>
+        
+                                        <div class="input_container">
+                                            
+                                            <input type="checkbox" id="react" name="technology" value="react">
+                                            <label for="react">React</label>
+                                        </div>
+                                        <div class="input_container">
+                                            
+                                            <input type="checkbox" id="nodeJs" name="technology" value="nodeJs">
+                                            <label for="nodeJs">Node Js, Express js</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <a class="primary_btn">submit</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

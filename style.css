@@ -320,12 +320,12 @@ p.service_desc {
 /*---------------------- services section css end--------------------------- */
 
 
-/*-------------------------- resume section css start------------------------ */
-#resume {
+/*-------------------------- skills section css start------------------------ */
+#skills {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-#resume .row {
+#skills .row {
     padding-top: 80px;
 }
 .programing_skills, .education_box {
@@ -433,7 +433,7 @@ p.service_desc {
     line-height: 28px;
 }
 
-/*-------------------------- resume section css end ------------------------ */
+/*-------------------------- skills section css end ------------------------ */
 
 /*-------------------- portfolio section css start ------------------------*/
 #portfolio {

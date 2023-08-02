@@ -1,3 +1,6 @@
+import data from './firbaseInfo.js';
+console.log(data);
+
 const menuBar = document.querySelector('.menu_bar');
 menuBar.addEventListener('click', () => {
     document.querySelector('.horizontal_menu').classList.add('show_menu');
@@ -37,3 +40,4 @@ let typed = new Typed(".auto_type", {
     backSpeed: 90,
     loop: true
 });
+

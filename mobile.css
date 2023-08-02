@@ -91,7 +91,7 @@
     }
 }
 
-/* hero section css end */
+/* --------------------------hero section css end--------------------------- */
 
 /* ---------------------- about section css start ---------------------------- */
 @media screen and (max-width: 1024px){
@@ -140,7 +140,7 @@
 }
 /*---------------------- services section css end--------------------------- */
 
-/*-------------------------- resume section css start------------------------ */
+/*-------------------------- skills section css start------------------------ */
 
 @media screen and (max-width: 1024px) {
     .programing_skills, .education_box {
@@ -148,7 +148,7 @@
     }
 }
 @media screen and (max-width: 800px) {
-    #resume .row {
+    #skills .row {
         flex-direction: column;
         padding-top: 80px;
     }
@@ -160,7 +160,7 @@
         margin-bottom: 50px;
     }
 }
-/*-------------------------- resume section css end ------------------------ */
+/*-------------------------- skills section css end ------------------------ */
 
 /*---------------------- contact me section css start---------------------- */
 @media screen and (max-width: 1024px){

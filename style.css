@@ -12,6 +12,7 @@ html {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 a {
@@ -252,7 +253,7 @@ h4.hero_designation {
 }
 .about_content {
     font-family: sans-serif;
-    padding-right: 50px;
+    padding-top: 80px;
 }
 
 .about_content h2 {
@@ -287,168 +288,186 @@ h4.hero_designation {
     left: -35px;
 }
 
-/* ---------------------- about section css end ---------------------------- */
-
-/*---------------------- services section css start--------------------------- */
-#services {
-    background-color: var(--background-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.services_wrapper {
+/* journy */
+#journey {
+    padding: 60px 0;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: auto;
+  }
+  
+  .timeline-item {
     display: flex;
     justify-content: space-between;
-    padding-top: 80px;
-}
-
-.service {
-    width: 30%;
-    text-align: center;
-    border: 1px solid var(--primary-color);
-    padding: 40px 15px;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 3px solid blue;
+    border-radius: 8px;
+  }
+  
+  .timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0px 8px 19px -14px var(--primary-color);
-    font-family: sans-serif;
-    transition: all .3s;
+    min-width: 120px;
+    text-align: center;
+  }
+  
+  .content {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .content h3 {
+    margin: 0;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  .content p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+  
+  .future {
+    background: rgba(0, 123, 255, 0.1);
+    border-left: 5px solid #007BFF;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column !important;
+      text-align: center;
+    }
+  
+    .year {
+      margin-bottom: 10px;
+    }
+  
+    .content {
+      text-align: center;
+    }
+  }
+  
+/* ---------------------- about section css end ---------------------------- */
+
+/*---------------------- education section css start--------------------------- */
+#education {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 50px 0;
 }
+.edu-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+    border-bottom: 5px solid #007BFF;
+  }
+  
+  .edu-content h3 {
+    color: #007BFF;
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .edu-content p {
+    color: #555;
+    font-size: 1.4rem;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .edu-card {
+      max-width: 90%;
+    }
+  }
 
-
-.service_icon {
-    color: var(--primary-color);
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-h2.service_title {
-    text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-p.service_desc {
-    font-size: 18px;
-    line-height: 26px;
-}
-
-.service:hover {
-    box-shadow: 0px 0px 19px -14px var(--primary-color);
-}
-
-/*---------------------- services section css end--------------------------- */
+/*---------------------- education section css end--------------------------- */
 
 
 /*-------------------------- skills section css start------------------------ */
 #skills {
+    background-color: var(--background-color);
     padding-top: 100px;
     padding-bottom: 100px;
 }
-#skills .row {
-    padding-top: 80px;
-}
-.programing_skills, .education_box {
-    box-shadow: 0px 8px 19px -14px var(--primary-color);
-    padding: 30px;
-    width: 85%;
+.skill-category {
+    margin-bottom: 40px;
+    margin-top: 50px;
+  }
+  
+  .skill-category h3 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill-card {
+    background: #fff;
+    padding: 15px;
     border-radius: 10px;
-    font-family: sans-serif;
-}
-.education_box {
-    margin-left: auto;
-    margin-bottom: 50px;
-}
-
-.programing_skills h3 {
-    font-size: 30px;
-    margin-bottom: 50px;
-    font-weight: 900;
-}
-
-.progress {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .skill-card img {
     width: 100%;
-    height: 12px;
-    background: var(--background-color);
-    border-radius: 50px;
-    margin-top: 10px;
     margin-bottom: 10px;
-    position: relative;
-}
-
-.progress::after {
-    display: table;
-    content: '';
-    width: 60%;
-    height: 100%;
-    background: var(--primary-color);
-    position: absolute;
-    top: 0;
-    z-index: 100;
-    left: 0;
-    border-radius: 50px;
-}
-.html .progress::after {
-    width: 94%;
-}
-.js .progress::after {
-    width: 85%;
-}
-.wp .progress::after {
-    width: 90%;
-}
-.rj .progress::after {
-    width: 80%;
-}
-.progress::before {
-    content:' 60%';
-    position: absolute;
-    left: 55%;
-    top: -38px;
-    font-size: 14px;
-    padding: 7px 15px;
-    color: var(--primary-color)
-}
-
-.html .progress::before {
-    content: '94%';
-    left: 89%;
-}
-.js .progress::before {
-    content: '85%';
-    left: 80%;
-}
-.wp .progress::before {
-    content: '90%';
-    left: 85%;
-}
-.rj .progress::before {
-    content: '80%';
-    left: 75%;
-}
-
-.progressiv_bar h4 {
-    font-size: 18px;
-    font-weight: normal;
-}
-
-.progressiv_bar {
-    margin-bottom: 30px;
-}
-
-.education_box h3 {
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-
-.education_box h4 {
-    color: var(--primary-color);
-    font-weight: normal;
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-
-.education_box p {
-    font-size: 18px;
-    line-height: 28px;
-}
-
+    max-height: 100px;
+    object-fit: contain;
+  }
+  
+  .skill-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-grid {
+      gap: 10px;
+    }
+    .skill-card {
+      width: 100px;
+    }
+    .skill-card img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 /*-------------------------- skills section css end ------------------------ */
 
 /*-------------------- portfolio section css start ------------------------*/

@@ -213,49 +213,131 @@
     <section id="projects">
         <div class="container">
             <div class="section-title">
-                <h2>My Projects</h2>
+                <h2>My Best Projects</h2>
             </div>
-            <div class="row">
-                <div class="portfolio_wrapper">
-                    <a href="https://muhammad-sohel131.github.io/sohel" class="portfolio">
-                        <div class="portfolio_overlay">
-                            <h2>E-commerce website</h2>
-                            <h5>Vanila JS, Vanila Css</h5>
-                        </div>
-                        <img src="./images/project1.jpg" alt="project1" />
-                    </a>
-                    <a href="https://muhammad-sohel131.github.io/sohel" class="portfolio">
-                        <div class="portfolio_overlay">
-                            <h2>E-commerce website</h2>
-                            <h5>Vanila JS, Vanila Css</h5>
-                        </div>
-                        <img src="./images/project2.jpg" alt="project2" />
-                    </a>
-                    <a href="https://muhammad-sohel131.github.io/sohel" class="portfolio">
-                        <div class="portfolio_overlay">
-                            <h2>E-commerce website</h2>
-                            <h5>Vanila JS, Vanila Css</h5>
-                        </div>
-                        <img src="./images/project3.jpg" alt="project3" />
-                    </a>
-                    <a href="https://muhammad-sohel131.github.io/sohel" class="portfolio">
-                        <div class="portfolio_overlay">
-                            <h2>E-commerce website</h2>
-                            <h5>Vanila JS, Vanila Css</h5>
-                        </div>
-                        <img src="./images/project4.jpg" alt="project4" />
-                    </a>
-                    <a href="https://muhammad-sohel131.github.io/sohel" class="portfolio">
-                        <div class="portfolio_overlay">
-                            <h2>E-commerce website</h2>
-                            <h5>Vanila JS, Vanila Css</h5>
-                        </div>
-                        <img src="./images/project5.jpg" alt="project5" />
-                    </a>
+            <div class="project-container">
+                
+                <!-- LoveLink Project -->
+                <div class="project-card">
+                    <img src="images/loveLink.png" alt="LoveLink Project">
+                    <h3>LoveLink</h3>
+                    <p>A modern dating and matchmaking platform.</p>
+                    <button class="btn" onclick="openModal('lovelink-modal')">View More</button>
                 </div>
+    
+                <!-- GroupStudy Project -->
+                <div class="project-card">
+                    <img src="images/group-study.png" alt="GroupStudy Project">
+                    <h3>GroupStudy</h3>
+                    <p>A collaborative study platform for students.</p>
+                    <button class="btn" onclick="openModal('groupstudy-modal')">View More</button>
+                </div>
+    
+                <!-- DonateCampaign Project -->
+                <div class="project-card">
+                    <img src="images/donateCampaign.png" alt="DonateCampaign Project">
+                    <h3>DonateCampaign</h3>
+                    <p>A crowdfunding platform for social causes.</p>
+                    <button class="btn" onclick="openModal('donatecampaign-modal')">View More</button>
+                </div>
+    
             </div>
         </div>
     </section>
+
+    <!-- Modal Structure for LoveLink -->
+    <div id="lovelink-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('lovelink-modal')">&times;</span>
+            <h2>LoveLink</h2>
+            <img src="images/loveLink.png" alt="LoveLink">
+            <h3>Main Technology Stack:</h3>
+            <p>React.js, Firebase, Express.js, MongoDB</p>
+
+            <h3>Brief Description:</h3>
+            <p>LoveLink is an online matchmaking platform that connects people based on their interests and preferences.</p>
+
+            <h3>Live Project:</h3>
+            <a href="https://lovelink-5e84a.web.app" target="_blank">Visit LoveLink</a>
+
+            <h3>GitHub Repository:</h3>
+            <a href="https://github.com/muhammad-sohel131/loveLink-frontend" target="_blank">GitHub (Client)</a>
+
+            <h3>Challenges Faced:</h3>
+            <p>- Implementing real-time chat system<br>
+               - Optimizing matchmaking algorithms</p>
+
+            <h3>Potential Improvements:</h3>
+            <p>- Adding AI-based profile matching<br>
+               - Implementing video call feature</p>
+        </div>
+    </div>
+
+    <!-- Modal Structure for GroupStudy -->
+    <div id="groupstudy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('groupstudy-modal')">&times;</span>
+            <h2>GroupStudy</h2>
+            <img src="images/group-study.png" alt="GroupStudy">
+            <h3>Main Technology Stack:</h3>
+            <p>React.js, Firebase, Node.js, MongoDB</p>
+
+            <h3>Brief Description:</h3>
+            <p>GroupStudy is a collaborative platform where students can join study groups, share resources, and track progress.</p>
+
+            <h3>Live Project:</h3>
+            <a href="https://group-study-b6d75.web.app" target="_blank">Visit GroupStudy</a>
+
+            <h3>GitHub Repository:</h3>
+            <a href="https://github.com/muhammad-sohel131/groupStudy-frontend" target="_blank">GitHub (Client)</a>
+
+            <h3>Challenges Faced:</h3>
+            <p>- Implementing real-time collaboration<br>
+               - Managing group messaging efficiently</p>
+
+            <h3>Potential Improvements:</h3>
+            <p>- AI-based tutor suggestions<br>
+               - Enhanced notification system</p>
+        </div>
+    </div>
+
+    <!-- Modal Structure for DonateCampaign -->
+    <div id="donatecampaign-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('donatecampaign-modal')">&times;</span>
+            <h2>DonateCampaign</h2>
+            <img src="/images/donateCampaign.png" alt="DonateCampaign">
+            <h3>Main Technology Stack:</h3>
+            <p>React.js, Stripe API, Express.js, MongoDB</p>
+
+            <h3>Brief Description:</h3>
+            <p>DonateCampaign is a crowdfunding platform that helps individuals raise funds for social causes and emergencies.</p>
+
+            <h3>Live Project:</h3>
+            <a href="https://donation-campaign-a1e70.web.app" target="_blank">Visit DonateCampaign</a>
+
+            <h3>GitHub Repository:</h3>
+            <a href="https://github.com/muhammad-sohel131/donateCampaign-frontend" target="_blank">GitHub (Client)</a>
+
+            <h3>Challenges Faced:</h3>
+            <p>- Secure online payments<br>
+               - Fraud detection for donations</p>
+
+            <h3>Potential Improvements:</h3>
+            <p>- Cryptocurrency donations<br>
+               - More payment gateway integrations</p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "flex";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
     <!-- portfolio section end -->
 
 
@@ -349,7 +431,7 @@
 
     <!-- footer start -->
     <footer>
-        <p>copyright@2021 - 2022</p>
+        <p>copyright@2021 - 2026</p>
     </footer>
     <!-- footer end -->
 

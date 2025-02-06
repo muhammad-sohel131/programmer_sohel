@@ -211,6 +211,9 @@ h4.hero_designation {
     font-size: 19px;
     color: #333;
     font-weight: normal;
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 10px 20px;
     transition: all .2s;
 }
 
@@ -222,7 +225,20 @@ h4.hero_designation {
     color: var(--primary-color);
     cursor: pointer;
 }
-
+.profile_image {
+    border: 2px solid blue;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_image img {
+    width: 66%;
+}
 /* -------------------------hero section css end -----------------------------*/
 
 

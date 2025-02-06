@@ -195,7 +195,7 @@
     </section>
     <!-- resume section end -->
 
-    <!-- services section start -->
+    <!-- Education section start -->
     <section id="education">
         <div class="container">
             <div class="edu-card">
@@ -208,7 +208,7 @@
               </div>
         </div>
     </section>
-    <!-- services section end -->
+    <!-- Education section end -->
     <!-- portfolio section start -->
     <section id="projects">
         <div class="container">
@@ -312,31 +312,33 @@
                 <div class="col-7 sm-col">
                     <form id="contactForm">
                         <div class="input_container">
-                            <input type="text" placeholder="Type Your Name" />
+                            <input type="text" id="name" placeholder="Type Your Name" />
                         </div>
                         <div class="input_container">
-                            <input type="email" placeholder="Type Your Email" />
+                            <input type="email" id="email" placeholder="Type Your Email" />
                         </div>
                         <div class="input_container">
-                            <textarea name="message" id="" placeholder="Type Your Thought..."></textarea>
+                            <textarea id="message" placeholder="Type Your Thought..."></textarea>
                         </div>
-                        <a class="primary_btn">Send to me</a>
+                        <a class="primary_btn" onclick="sendEmail()">Send to me</a>
                     </form>
                 </div>
                 <div class="col-5 sm-col">
                     <div class="info_box">
                         <strong>Phone:</strong>
                         <p>01748617550</p>
-                        <p>01302633568</p>
+                        <p>01302633568 (WhatsApp)</p>
                     </div>
                     <div class="info_box">
                         <strong>Email:</strong>
-                        <p>sohelf131@gmail.com</p>
+                        <p><a style="color: #000;" href="https://mail.google.com/mail/?view=cm&fs=1&to=sohelf131@gmail.com" target="_blank">sohelf131@gmail.com</a></p>
+
+                        
                     </div>
                     <div class="info_box">
                         <strong>Address:</strong>
                         <Address>
-                            Bhola, Barishal, Bangladesh
+                            Dhaka, Bangladesh
                         </Address>
                     </div>
                 </div>
@@ -351,6 +353,17 @@
     </footer>
     <!-- footer end -->
 
+    <script>
+        function sendEmail() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            var mailtoLink = `mailto:sohelf131@gmail.com?subject=Message from ${name}&body=Name: ${name}%0AEmail: ${email}%0A%0A${message}`;
+            
+            window.location.href = mailtoLink;
+        }
+    </script>
     <!-- js cdn for auto type text -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 

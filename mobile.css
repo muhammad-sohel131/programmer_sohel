@@ -8,6 +8,9 @@
     .sm-col{
         width: 100%;
     }
+    .social_links span {
+        display: none;
+    }
 }
 /* header css start */
 @media screen and (max-width: 1024px){
